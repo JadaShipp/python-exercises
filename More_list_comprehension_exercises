@@ -58,3 +58,4 @@ odd_negative_numbers = [n for n in numbers if n % 2 != 0 and n < 0]
 # Exercise 17 - Make a variable named numbers_plus_5. In it, return a list containing each number plus five. 
 numbers_plus_5 = [n + 5 for n in numbers]  
 
+# BONUS Make a variable named "primes" that is a list containing the prime numbers in the numbers list. *Hint* you may want to make or find a helper function that determines if a given number is prime or not.
