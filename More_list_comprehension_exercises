@@ -10,3 +10,7 @@ upper_cased_fruits = [fruit.upper() for fruit in fruits]
 upper_cased_fruits                                                                                                                               
 ['MANGO', 'KIWI', 'STRAWBERRY', 'GUAVA', 'PINEAPPLE', 'MANDARIN ORANGE']
 
+# Exercise 2 - create a variable named capitalized_fruits and use list comprehension syntax to produce output like ['Mango', 'Kiwi', 'Strawberry', etc...]
+capitalized_fruits = [fruit.capitalize() for fruit in fruits] 
+
+#Exercise 3 - Use a list comprehension to make a variable named fruits_with_more_than_two_vowels. Hint: You'll need a way to check if something is a vowel.
