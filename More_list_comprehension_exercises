@@ -33,4 +33,9 @@ fruit for fruit in fruits if len(fruit) < 5]
  fruits_with_letter_a = [fruit for fruit in fruits if vowel in fruit]  
  ['mango', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
 
- 
+# Exercise 10 - Make a variable named even_numbers that holds only the even numbers
+numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 17, 19, 23, 256, -8, -4, -2, 5, -9]
+even_numbers = [n for n in numbers if n % 2 == 0]     
+
+# Exercise 11 - Make a variable named odd_numbers that holds only the odd numbers
+odd_numbers = [n for n in numbers if n % 2 != 0]   
