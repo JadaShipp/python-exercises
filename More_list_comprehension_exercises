@@ -21,4 +21,6 @@ capitalized_fruits = [fruit.capitalize() for fruit in fruits]
 [fruit for fruit in fruits if len(fruit) == 5]                                                                                                                                             
 ['mango', 'guava']
 
-
+# Exercise 7 - Make a list that contains fruits that have less than 5 characters
+fruit for fruit in fruits if len(fruit) < 5]                                                                                                                                              
+['kiwi']
