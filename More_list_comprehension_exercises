@@ -27,4 +27,10 @@ fruit for fruit in fruits if len(fruit) < 5]
 
 # Exercise 8 Make a list containing the number of characters in each fruit. Output would be [5, 4, 10, etc... ]
 [len(fruit) for fruit in fruits]                                                                                                                                                           
-[43]: [5, 4, 10, 5, 9, 15]
+[5, 4, 10, 5, 9, 15]
+
+# Exercise 9 - Make a variable named fruits_with_letter_a that contains a list of only the fruits that contain the letter "a"
+ fruits_with_letter_a = [fruit for fruit in fruits if vowel in fruit]  
+ ['mango', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
+
+ 
