@@ -39,3 +39,11 @@ even_numbers = [n for n in numbers if n % 2 == 0]
 
 # Exercise 11 - Make a variable named odd_numbers that holds only the odd numbers
 odd_numbers = [n for n in numbers if n % 2 != 0]   
+
+# Exercise 12 - Make a variable named positive_numbers that holds only the positive numbers
+positive_numbers = [n for n in numbers if n > 0]    
+
+# Exercise 13 - Make a variable named negative_numbers that holds only the negative numbers
+negative_numbers = [n for n in numbers if n < 0]    
+
+# Exercise 14 - use a list comprehension w/ a conditional in order to produce a list of numbers with 2 or more numerals
