@@ -13,4 +13,11 @@ upper_cased_fruits
 # Exercise 2 - create a variable named capitalized_fruits and use list comprehension syntax to produce output like ['Mango', 'Kiwi', 'Strawberry', etc...]
 capitalized_fruits = [fruit.capitalize() for fruit in fruits] 
 
-#Exercise 3 - Use a list comprehension to make a variable named fruits_with_more_than_two_vowels. Hint: You'll need a way to check if something is a vowel.
+# Exercise 5 make a list that contains each fruit with more than 5 characters
+[fruit for fruit in fruits if len(fruits) > 5]                                                                                                                                             
+['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
+
+# Exercise make a list that contains each fruit with exactly 5 characters
+
+
+
