@@ -31,7 +31,7 @@ fruits_with_more_than_two_vowels = [
 ['mango', 'kiwi', 'strawberry', 'guava', 'pineapple', 'mandarin orange']
 
 # Exercise 6 make a list that contains each fruit with exactly 5 characters
-[fruit for fruit in fruits if len(fruit) == 5]                                                                                                                                             
+[fruit for fruit in fruits if len(fruit) == 5]                                                                                                                   
 ['mango', 'guava']
 
 # Exercise 7 - Make a list that contains fruits that have less than 5 characters
