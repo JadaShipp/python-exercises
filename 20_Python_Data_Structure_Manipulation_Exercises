@@ -2,7 +2,19 @@
 In [2]: len(students)                                                                                                                                                                               
 Out[2]: 14
 
-# Exercise 2 How many students prefer light coffee? For each type of coffee roast?
+# Exercise 2: How many students prefer light coffee? For each type of coffee roast?
 len([student for student in students if student['coffee_preference'] == 'light'])  
+len([student for student in students if student['coffee_preference'] == 'medium'])  
+len([student for student in students if student['coffee_preference'] == 'dark']) 
 
+# Exercise 3: How many types of each pet are there?
+
+pets = [student['pets'] for student in students]  
+flattened_list = sum(pets,[]) 
+
+
+# Exercise 4: How many grades does each student have? Do they all have the same number of grades?
+student['grades'] for student in students]
+
+# Exercise 5: What is each student's grade average?
 
