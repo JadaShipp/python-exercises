@@ -22,3 +22,13 @@ def is_consonant(x):
      return not is_vowel(x)
 
 # 4. Define a function that accepts a string that is a word. The function should capitalize the first letter of the word if the word starts with a consonant.
+def cap_first(word):
+    if is_consonant(word[0]) == True:
+        return word.capitalize()
+    else:
+        return "Can not capitalize becuase input is not a consonant"
+# 5. Define a function named calculate_tip. It should accept a tip percentage (a number between 0 and 1) and the bill total, and return the amount to tip.
+
+def calculate_tip(tip,bill_total):
+    if type(tip) == float:
+        return tip * bill_total
