@@ -54,3 +54,11 @@ def get_letter_grade(grade):
         return "D"
     else:
         return "F"
+
+# 9 Define a function named remove_vowels that accepts a string and returns a string with all the vowels removed.
+def remove_vowels(words):
+    other = words
+    vowels = ['a','e','i','o','u']
+    for n in vowels:
+        other = other.replace(n,"")
+    return other
