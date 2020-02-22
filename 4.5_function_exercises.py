@@ -36,3 +36,21 @@ def calculate_tip(tip,bill_total):
 def apply_discount(original_price, discount_percentage):
     if type(discount_percentage) == float:
         return f'Your price after discount is: {original_price - (original_price * discount_percentage)}'
+
+# 7. Define a function named handle_commas. It should accept a string that is a number that contains commas in it as input, and return a number as output.
+def handle_commas(numbers):
+    numbers = numbers.replace(",", "")
+    new = int(numbers)
+    return new
+# 8. Define a function named get_letter_grade. It should accept a number and return the letter grade associated with that number (A-F).
+def get_letter_grade(grade):
+    if grade >= 90:
+        return "A"
+    elif grade >= 80:
+        return "B"
+    elif grade >= 70:
+        return "C"
+    elif grade >= 60:
+        return "D"
+    else:
+        return "F"
