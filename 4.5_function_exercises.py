@@ -32,3 +32,7 @@ def cap_first(word):
 def calculate_tip(tip,bill_total):
     if type(tip) == float:
         return tip * bill_total
+# 6. Define a function named apply_discount. It should accept a original price, and a discount percentage, and return the price after the discount is applied.
+def apply_discount(original_price, discount_percentage):
+    if type(discount_percentage) == float:
+        return f'Your price after discount is: {original_price - (original_price * discount_percentage)}'
