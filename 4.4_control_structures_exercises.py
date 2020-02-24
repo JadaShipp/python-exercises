@@ -8,7 +8,7 @@ else:
     print ('Today is not Monday')
 What is the day of the week? monday
 Today is Monday
---prompt the user for a day of the week, print out whether the day of the week is a weekday or weekend
+# --prompt the user for a day of the week, print out whether the day of the week is a weekday or weekend
 In [4]:
 
 day_of_the_week = input('What is the day of the week? ')
@@ -39,8 +39,8 @@ print(f'Overtime pay is {total}')
 Overtime pay is 2825.0
 Loop Basics
 While Loops:
---Create an integer variable i with a value of 5.
---Create a while loop that runs so long as i is less than or equal to 15 --Each loop iteration, output the current value of i, then increment i by one
+# --Create an integer variable i with a value of 5.
+# --Create a while loop that runs so long as i is less than or equal to 15 --Each loop iteration, output the current value of i, then increment i by one
 In [8]:
 
 i = 5
@@ -58,7 +58,7 @@ while i <= 15:
 13
 14
 15
--Create a while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
+# -Create a while loop that will count by 2's starting with 0 and ending at 100. Follow each number with a new line.
 In [9]:
 
 i = 0
@@ -116,7 +116,7 @@ while i <= 100:
 96
 98
 100
--- Alter your loop to count backwards by 5's from 100 to -10.
+# -- Alter your loop to count backwards by 5's from 100 to -10.
 In [15]:
 
 i = 100
@@ -146,8 +146,8 @@ while i >= -10:
 0
 -5
 -10
---Create a while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
-In [16]:
+# --Create a while loop that starts at 2, and displays the number squared on each line while the number is less than 1,000,000. Output should equal:
+# In [16]:
 
 i = 2
 while i < 1000000:
@@ -158,7 +158,7 @@ while i < 1000000:
 16
 256
 65536
---Write a loop that uses print to create the output shown below.
+# --Write a loop that uses print to create the output shown below.
 In [17]:
 
 i = 100
@@ -185,11 +185,11 @@ while i >= 5:
 15
 10
 5
-For Loops:
-Write some code that prompts the user for a number, then shows a multiplication table up through 10 for that number.
-Create a list of integers from 1-10
-multipy the inpyt by the list one at a time
-In [33]:
+# For Loops:
+# Write some code that prompts the user for a number, then shows a multiplication table up through 10 for that number.
+# Create a list of integers from 1-10
+# multipy the inpyt by the list one at a time
+# In [33]:
 
 user_input = input('Enter a number ')
 user_input = int(user_input)
@@ -273,8 +273,8 @@ Yikes! Skipping number: 19
  Here is an odd number: 47
  Here is an odd number: 49
  Here is an odd number: 51
--The input function can be used to prompt for input and use that input in your python code. Prompt the user to enter a positive number and write a loop that counts from 0 to that number. (Hints: first make sure that the value the user entered is a valid number, also note that the input function returns a string, so you'll need to convert this to a numeric type.)
-In [35]:
+# -The input function can be used to prompt for input and use that input in your python code. Prompt the user to enter a positive number and write a loop that counts from 0 to that number. (Hints: first make sure that the value the user entered is a valid number, also note that the input function returns a string, so you'll need to convert this to a numeric type.)
+# In [35]:
 
 starting_point = 0
 ​
@@ -295,8 +295,8 @@ Enter a positive number: 9
 7
 8
 9
--Write a program that prompts the user for a positive integer. Next write a loop that prints out the numbers from the number the user entered down to 1
-In [47]:
+# -Write a program that prompts the user for a positive integer. Next write a loop that prints out the numbers from the number the user entered down to 1
+# In [47]:
 
 # pos_int = input("Enter a positive integer ")
 # pos_int = int(pos_int)
@@ -326,8 +326,8 @@ Input a positive number 8
 3
 2
 1
-Fizz Buzz
-In [50]:
+# Fizz Buzz
+# In [50]:
 
 for i in range(1,100):
     if i % 5 == 0 and i % 3 == 0:
@@ -437,8 +437,8 @@ Fizz
 97
 98
 Fizz
--Display a table of powers. -Prompt the user to enter an integer. -Display a table of squares and cubes from 1 to the value entered. -Ask if the user wants to continue. -Assume that the user will enter valid data. -Only continue if the user agrees to.
-In [63]:
+# -Display a table of powers. -Prompt the user to enter an integer. -Display a table of squares and cubes from 1 to the value entered. -Ask if the user wants to continue. -Assume that the user will enter valid data. -Only continue if the user agrees to.
+# In [63]:
 
 while True:
     user_choice = input("Input a positive number ")
@@ -476,4 +476,4 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'chioce' is not defined
 
-Convert given number grades into letter grades. Prompt the user for a numerical grade from 0 to 100. Display the corresponding letter grade. Prompt the user to continue. Assume that the user will enter valid integers for the grades. The application should only continue if the user agrees to. Grade Ranges: A : 100 - 88 B : 87 - 80 C : 79 - 67 D : 66 - 60 F : 59 - 0
+# Convert given number grades into letter grades. Prompt the user for a numerical grade from 0 to 100. Display the corresponding letter grade. Prompt the user to continue. Assume that the user will enter valid integers for the grades. The application should only continue if the user agrees to. Grade Ranges: A : 100 - 88 B : 87 - 80 C : 79 - 67 D : 66 - 60 F : 59 - 0
