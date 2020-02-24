@@ -27,3 +27,22 @@ profiles = json.load(open("profiles.json"))
 
 # Total number of users
 len(profiles)
+
+# Number of active users
+len([profile for profile in profiles if profile['isActive'] == True])
+
+# Number of inactive users
+len([profile for profile in profiles if profile['isActive'] == False])
+
+# Grand total of balances for all users
+balance_list = [profile['balance','name'] for profile in profiles]
+
+float_balances = [float(profile['balance'].replace('$','').replace(',','')) for profile in profiles]
+
+total = sum(float_balances)
+
+# Average balance per user
+import statistics
+
+average_total = sum(float_balances)/19
+
