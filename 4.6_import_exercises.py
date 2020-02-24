@@ -21,3 +21,9 @@ total = 0
 for combo in itertools.combinations('abcd', 2):
     count_of_combos.append(total)
 print(len(count_of_combos))
+
+# 3. Save json file as a variable
+profiles = json.load(open("profiles.json"))
+
+# Total number of users
+len(profiles)
