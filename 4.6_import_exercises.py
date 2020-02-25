@@ -11,14 +11,14 @@ from newfn_exercises import cumsum as cs
 # 1. How many different ways can you combine the letters from "abc" with the numbers 1, 2, and 3?
 count_of_products = []
 total = 0
-for product in itertools.product('abc','123'):
+for product in it.product('abc','123'):
     count_of_products.append(total)
 print(len(count_of_products))
 
 # 2. How many different ways can you combine two of the letters from "abcd"?
 count_of_combos = []
 total = 0
-for combo in itertools.combinations('abcd',2):
+for combo in it.combinations('abcd',2):
     count_of_combos.append(total)
 print(len(count_of_combos))
 
@@ -31,8 +31,16 @@ len(profiles)
 # Number of active users
 len([profile for profile in profiles if profile['isActive'] == True])
 
+# You do not need the == True becuase the [] is already a boolean expression
+
+len([profile for profile in profiles if profile['isActive'])
+
 # Number of inactive users
 len([profile for profile in profiles if profile['isActive'] == False])
+
+# Alternative
+
+len([profile for profile in profiles if not profile['isActive'])
 
 # Grand total of balances for all users
 balance_list = [profile['balance',] for profile in profiles]
@@ -41,10 +49,20 @@ float_balances = [float(profile['balance'].replace('$','').replace(',','')) for 
 
 total = sum(float_balances)
 
+# Alternative
+def get_profile_balance(profile):
+    return float(profile['balance'].replace('$','').replace(',',''))
+
+balances = sum(get_profile_balance(profile) for profile in profiles)
+
 # Average balance per user
 import statistics
 
 average_total = sum(float_balances)/len(profiles)
+
+# Alternatives
+
+balances = sum(get_profile_balance)/len(profiles)
 
 # User with the lowest balance
 float_balances = [float(profile['balance'].replace('$','').replace(',','')) for profile in profiles]
@@ -75,11 +93,17 @@ from collections import Counter
 
 most_popular_fruit = max(Counter([profile['favoriteFruit'] for profile in profiles]))
 
+# If you want the name of the most popular fruit with the count of that fruit use:
+
 Counter(list_of_favfruits)
 x = 3
 d = Counter(list_of_favfruits)
 
+# You now have a list of tuples. Use .most_common() to put them in order from highest to lowest
+
 top_fruit = d.most_common()
+
+# Use indexing to find the most popular
 
 top_fruit[0]
 
@@ -101,5 +125,6 @@ top_fruit[-1]
 # Total number of unread messages for all users
 
 list_of_unreadmessages_as_string = [profile['greeting'] for profile in profiles]
+
 
 
