@@ -68,3 +68,21 @@ max_list = [n for n in range(len(float_balances)) if float_balances[n] == max(fl
 
 name_with_max_balance = profiles[max_list[0]]['name'], profiles[max_list[0]]['balance']
 
+# Most common favorite fruit
+list_of_favfruits = [profile['favoriteFruit'] for profile in profiles]
+
+from collections import Counter
+
+most_popular_fruit = max(Counter([profile['favoriteFruit'] for profile in profiles]))
+
+Counter(list_of_favfruits)
+x = 3
+d= Counter(list_of_favfruits)
+
+top_fruit = d.most_common()
+
+top_fruit[0]
+
+
+
+
