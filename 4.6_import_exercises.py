@@ -98,6 +98,8 @@ top_fruit = d.most_common()
 
 top_fruit[-1]
 
+# Total number of unread messages for all users
 
+list_of_unreadmessages_as_string = [profile['greeting'] for profile in profiles]
 
 
