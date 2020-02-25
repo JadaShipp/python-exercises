@@ -18,7 +18,7 @@ print(len(count_of_products))
 # 2. How many different ways can you combine two of the letters from "abcd"?
 count_of_combos = []
 total = 0
-for combo in itertools.combinations('abcd', 2):
+for combo in itertools.combinations('abcd',2):
     count_of_combos.append(total)
 print(len(count_of_combos))
 
@@ -35,7 +35,7 @@ len([profile for profile in profiles if profile['isActive'] == True])
 len([profile for profile in profiles if profile['isActive'] == False])
 
 # Grand total of balances for all users
-balance_list = [profile['balance','name'] for profile in profiles]
+balance_list = [profile['balance',] for profile in profiles]
 
 float_balances = [float(profile['balance'].replace('$','').replace(',','')) for profile in profiles]
 
@@ -44,5 +44,12 @@ total = sum(float_balances)
 # Average balance per user
 import statistics
 
-average_total = sum(float_balances)/19
+average_total = sum(float_balances)/len(profiles)
 
+# User with the lowest balance
+float_balances = [float(profile['balance'].replace('$','').replace(',','')) for profile in profiles]
+min(float_balances)
+min_list[]
+min_list = [n for n in range(len(float_balances)) if float_balances[n] == min(float_balances)]
+
+name_with_min_balance = profiles[min_list[0]]['name'], profiles[min_list[0]]['balance']
