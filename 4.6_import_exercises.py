@@ -48,8 +48,23 @@ average_total = sum(float_balances)/len(profiles)
 
 # User with the lowest balance
 float_balances = [float(profile['balance'].replace('$','').replace(',','')) for profile in profiles]
+# Get the minimal number in this list
 min(float_balances)
+# Create a new list with only the one minimal value
 min_list[]
 min_list = [n for n in range(len(float_balances)) if float_balances[n] == min(float_balances)]
 
+#give the name and balance at the index from the list of balances
 name_with_min_balance = profiles[min_list[0]]['name'], profiles[min_list[0]]['balance']
+
+# User with the lowest balance
+max(float_balances)
+
+#create a new list with only one maximum value
+max_list = []
+max_list = [n for n in range(len(float_balances)) if float_balances[n] == max(float_balances)]
+
+#give the name and balance at the index from the list of balances
+
+name_with_max_balance = profiles[max_list[0]]['name'], profiles[max_list[0]]['balance']
+
