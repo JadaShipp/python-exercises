@@ -77,11 +77,26 @@ most_popular_fruit = max(Counter([profile['favoriteFruit'] for profile in profil
 
 Counter(list_of_favfruits)
 x = 3
-d= Counter(list_of_favfruits)
+d = Counter(list_of_favfruits)
 
 top_fruit = d.most_common()
 
 top_fruit[0]
+
+# Least most common favorite fruit
+list_of_favfruits = [profile['favoriteFruit'] for profile in profiles]
+
+from collections import Counter
+
+least_popular_fruit = min(Counter([profile['favoriteFruit'] for profile in profiles]))
+
+Counter(list_of_favfruits)
+x = 3
+d = Counter(list_of_favfruits)
+
+top_fruit = d.most_common()
+
+top_fruit[-1]
 
 
 
